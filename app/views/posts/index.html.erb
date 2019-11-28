@@ -1,0 +1,16 @@
+<h1>indexページ</h1>
+
+<%= link_to "新規投稿ページ", "/posts/new"%>
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class = "post-image">
+      
+  
+    <div class="post-id">
+      ID:<%= post.id%>
+    </div >
+    <div class="post-content">
+      投稿内容：<%= post.content%>
+    </div>
+  </div>
+<% end %>
